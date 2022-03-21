@@ -14,7 +14,7 @@ h1{
 h2{
   color:black;
 }
-input, button, textarea, .checks{
+input, button, textarea, .checks, Link{
   margin-bottom: 20px;
 }
 
