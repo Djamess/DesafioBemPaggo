@@ -47,7 +47,7 @@ function Carrinho() {
         <h2>Observações: </h2>
         <textarea id="obs" name="obs" placeholder='Aguma dúvida? Recado?' /><br />
 
-        <button id="envia" type='submit'>Enviar</button>
+        <button id="envia" type='submit' name='envia'>Enviar</button>
 
     </form>
 
