@@ -1,7 +1,6 @@
 import './App.css';
 import './routes/App.routes.js';
 import React, { useState } from 'react';
-import { Link} from 'react-router-dom'
 
 function Carrinho() {
 
@@ -13,7 +12,9 @@ function Carrinho() {
 
     return <form onSubmit={handleSubmit}>
         <h1>Formulário para compra de Pacote de adesivos</h1>
+
         <br />
+
         <h2> Quais adesivos: </h2>
 
         <div className="checks">
@@ -26,6 +27,12 @@ function Carrinho() {
             <label>
                 <input id="angular" type="checkbox" name="Angular" />Angular<br />
             </label>
+            <label>
+                <input id="javascript" type="checkbox" name="Javascript" />JavaScript<br />
+            </label>
+            <label>
+                <input id="reactjs" type="checkbox" name="Reactjs" />ReactJS<br />
+            </label>
         </div>
 
         <h2> Quantos adesivos de cada? </h2>
@@ -37,10 +44,11 @@ function Carrinho() {
         <br />
         <br />
 
-        <textarea id="obs" name="obs" placeholder='Observações' /><br />
-         
-        <Link to="Checkout.js">Enviar</Link>
-        
+        <h2>Observações: </h2>
+        <textarea id="obs" name="obs" placeholder='Aguma dúvida? Recado?' /><br />
+
+        <button id="envia" type='submit'>Enviar</button>
+
     </form>
 
 }
